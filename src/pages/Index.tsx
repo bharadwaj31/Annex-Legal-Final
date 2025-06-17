@@ -628,8 +628,8 @@ const Index = () => {
           
           <div className="grid lg:grid-cols-3 gap-8">
             {[
-              { icon: Phone, title: 'Call Us', content: '+91 72078 62355', subtitle: 'Mon-Fri 9AM-7PM' },
-              { icon: Mail, title: 'Email Us', content: 'info@annexlegal.com',  },
+              { icon: Phone, title: 'Call Us', content: '+91 99999 99999', subtitle: 'Mon-Fri 9AM-7PM' },
+              { icon: Mail, title: 'Email Us', content: 'info@annexlegal.co.in',  },
               { icon: MapPin, title: 'Office', content: 'Hyderbad, TG, IN', subtitle: '' }
             ].map((contact, index) => (
               <Card
