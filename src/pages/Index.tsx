@@ -56,7 +56,7 @@ const Index = () => {
     }
   ];
 
-  const attorneys = [
+  const Advocates = [
     {
       name: "Pooja Rao Putrevu",
       position: "Founder & Advocate",
@@ -213,7 +213,7 @@ const Index = () => {
                 animation: 'slideInRight 1s ease-out'
               }}
             >
-              {['Services', 'About', 'Attorneys', 'Contact'].map((item, index) => (
+              {['Services', 'About', 'Advocates', 'Contact'].map((item, index) => (
                 <a 
                   key={item}
                   href={`#${item.toLowerCase()}`} 
@@ -516,8 +516,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Attorneys */}
-      <section id="attorneys" className="py-20 bg-gray-50 relative overflow-hidden">
+      {/* Advocates */}
+      <section id="Advocates" className="py-20 bg-gray-50 relative overflow-hidden">
         <div 
           className="absolute inset-0 opacity-5"
           style={{
@@ -530,29 +530,29 @@ const Index = () => {
           <div 
             className="text-center mb-16"
             data-animate
-            id="attorneys-header"
+            id="Advocates-header"
             style={{
-              transform: isVisible['attorneys-header'] ? 'translateY(0)' : 'translateY(50px)',
-              opacity: isVisible['attorneys-header'] ? 1 : 0,
+              transform: isVisible['Advocates-header'] ? 'translateY(0)' : 'translateY(50px)',
+              opacity: isVisible['Advocates-header'] ? 1 : 0,
               transition: 'all 1s cubic-bezier(0.4, 0, 0.2, 1)'
             }}
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Attorneys</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Advocates</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Meet our experienced legal professionals committed to your success
             </p>
           </div>
           
           <div className="grid md:grid-cols-1 gap-8 justify-center">
-            {attorneys.map((attorney, index) => (
+            {Advocates.map((Advocates, index) => (
               <Card 
                 key={index} 
                 className="text-center hover:shadow-2xl transition-all duration-700 ease-out max-w-md mx-auto group relative overflow-hidden bg-white"
                 data-animate
-                id={`attorney-${index}`}
+                id={`Advocates-${index}`}
                 style={{
-                  transform: isVisible[`attorney-${index}`] ? 'translateY(0) scale(1)' : 'translateY(50px) scale(0.9)',
-                  opacity: isVisible[`attorney-${index}`] ? 1 : 0,
+                  transform: isVisible[`Advocates-${index}`] ? 'translateY(0) scale(1)' : 'translateY(50px) scale(0.9)',
+                  opacity: isVisible[`Advocates-${index}`] ? 1 : 0,
                   transition: `all 1s cubic-bezier(0.4, 0, 0.2, 1) ${index * 0.3}s`
                 }}
                 onMouseEnter={(e) => {
@@ -577,13 +577,13 @@ const Index = () => {
                     <Users className="h-16 w-16 text-white transition-all duration-500 group-hover:scale-110 relative z-10" />
                   </div>
                   <CardTitle className="text-xl text-gray-900 transition-all duration-300 group-hover:text-blue-900">
-                    {attorney.name}
+                    {Advocates.name}
                   </CardTitle>
                   <CardDescription className="text-blue-900 font-semibold transition-all duration-300 group-hover:text-blue-700">
-                    {attorney.position}
+                    {Advocates.position}
                   </CardDescription>
                   <CardDescription className="text-gray-600 font-medium transition-all duration-300 group-hover:text-gray-800">
-                    {attorney.specialization}
+                    {Advocates.specialization}
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -730,7 +730,7 @@ const Index = () => {
               { title: 'Practice Areas', items: ['Corporate Law', 'Commercial Litigation', 'Employment Law', 'Intellectual Property'] },
               { title: 'Quick Links', items: [
                 { text: 'About Us', href: '#about' },
-                { text: 'Our Team', href: '#attorneys' },
+                { text: 'Our Team', href: '#Advocates' },
                 { text: 'Contact', href: '#contact' },
                 { text: 'Resources', href: '#' }
               ] },

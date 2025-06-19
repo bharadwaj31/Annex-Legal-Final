@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://bharadwaj31.github.io/Annex-Legal-Final",
+  "homepage": "https://www.annexlegal.co.in"
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
