@@ -544,7 +544,7 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-1 gap-8 justify-center">
-            {attorneys.map((attorney, index) => (
+            {Attorney.map((attorney, index) => (
               <Card 
                 key={index} 
                 className="text-center hover:shadow-2xl transition-all duration-700 ease-out max-w-md mx-auto group relative overflow-hidden bg-white"
@@ -770,7 +770,7 @@ const Index = () => {
         </div>
       </footer>
 
-      <style jsx>{`
+      <style>{`
         @keyframes fadeInUp {
           from {
             opacity: 0;
