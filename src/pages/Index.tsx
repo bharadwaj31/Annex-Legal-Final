@@ -58,9 +58,7 @@ const Index = () => {
 
   const Attorney = [
     {
-      name: "Pooja Rao Putrevu",
-      position: "Founder & Advocate",
-    },
+      name: "Pooja Rao Putrevu",position: "Managing Partner" }
   ];
 
   return (
@@ -583,7 +581,6 @@ const Index = () => {
                     {attorney.position}
                   </CardDescription>
                   <CardDescription className="text-gray-600 font-medium transition-all duration-300 group-hover:text-gray-800">
-                    {attorney.specialization}
                   </CardDescription>
                 </CardHeader>
               </Card>
