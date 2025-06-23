@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === "development" ? "/Annex-Legal-Final/" : "/Annex-Legal-Final/",
+  base: "/", // ✅ Use "/" for custom domain like www.annexlegal.co.in
   server: {
     host: "::",
     port: 8080,
